@@ -2,7 +2,7 @@ package parallelTesting.test;
 
 import org.testng.annotations.*;
 
-import javax.swing.*;
+
 
 public class ParallelExecOnTest {
 
