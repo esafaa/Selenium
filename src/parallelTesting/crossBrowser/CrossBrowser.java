@@ -2,13 +2,9 @@ package parallelTesting.crossBrowser;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
-import utility.LocalBrowserManager;
 import utility.LocalDriverManager;
 
 public class CrossBrowser {
-     WebDriver driver;
-
-
 
     @Test
     public void validateTitleForBestBuy() throws InterruptedException{
