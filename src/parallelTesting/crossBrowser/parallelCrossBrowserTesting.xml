@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="crossBrowserTesting"  parallel="methods">
+    <listeners>
+        <listener class-name="parallelTesting.crossBrowser.Listeners"/>
+    </listeners>
+    <test name="chrome">
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+            <class name="parallelTesting.crossBrowser.CrossBrowser"/>
+        </classes>
+    </test>
+    <test name="firefox">
+        <parameter name="browserName" value="firefox"/>
+        <classes>
+            <class name="parallelTesting.crossBrowser.CrossBrowser"/>
+        </classes>
+    </test>
+</suite>
